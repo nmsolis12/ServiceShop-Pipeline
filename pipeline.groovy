@@ -10,5 +10,6 @@ node {
    env.JAVA_HOME="${tool 'jdk-8u102'}"
    env.PATH="${env.MAVEN_HOME}/bin;${env.JAVA_HOME}/bin;${env.PATH}"
    
+   echo 'Hello'
    bat 'mvn clean install'
 }
